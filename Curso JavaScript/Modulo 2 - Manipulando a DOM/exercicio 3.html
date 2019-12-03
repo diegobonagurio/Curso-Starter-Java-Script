@@ -1,0 +1,22 @@
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Módulo 02 - 3º exercício</title>
+        </head>
+        <body>
+                <ul id="listaNomes"></ul>
+  
+            <script>
+                var nomes = ["Diego", "Gabriel", "Lucas"];
+
+                for(i = 0; i < nomes.length; i++){
+                    var liList = document.createElement("LI");
+                    var textList = document.createTextNode(nomes[i]);
+                    liList.appendChild(textList);
+                    document.getElementById("listaNomes").appendChild(liList);
+                    
+                }
+
+            </script>
+        </body>
+    </html>
